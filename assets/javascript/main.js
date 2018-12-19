@@ -6,8 +6,15 @@ var config = {
     projectId: "train-scheduler-f2f39",
     storageBucket: "train-scheduler-f2f39.appspot.com",
     messagingSenderId: "658694027922"
-  };
+};
 
-  firebase.initializeApp(config);
+firebase.initializeApp(config);
 
-  var database = firebase.database();
+var database = firebase.database();
+
+// Global variables
+var name = "";
+var role = "";
+var startDate = "";
+var monthlyRate = 0;
+var rowCounter = 1;
